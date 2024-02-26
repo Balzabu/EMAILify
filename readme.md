@@ -27,7 +27,7 @@ To utilize the API for email extraction programmatically, follow these steps:
 2. Receive a JSON response containing the extracted email addresses.
 
 Example API request:
-```http
+```url
 http://localhost:8000/api/?url=URLHERE
 ```
 
