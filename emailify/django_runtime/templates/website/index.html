@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emailify</title>
+        <link rel="stylesheet" href="{% static 'styles/index_styles.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+        <script src="{% static 'js/index.js' %}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Load the static image and apply the "logo" class -->
+            <img class="logo" src="{% static '/images/logo.png' %}" alt="My image">
+            <form id="searchForm" name="searchForm" onsubmit="return checkForm();">
+                <input required type="url" id="url" placeholder="Enter URL (https://google.it)">
+                <button id="searchButton" name="searchButton">Search</button>
+            </form>
+            <!-- Updated error message with new styling -->
+            <div id="error-message" class="error-message">No email found</div>
+            <div id="url-error-message" class="error-message">Invalid URL</div>
+        </div>
+        <!-- Add CSRF token meta tag -->
+        <meta name="csrf-token" content="{{ csrf_token }}">
+    </body>
+</html>

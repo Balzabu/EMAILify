@@ -1,0 +1,20 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emailify</title>
+        <link rel="stylesheet" href="{% static 'styles/result_styles.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+        <script src="{% static 'js/result.js' %}"></script>
+    </head>
+    <body>
+        <h1>Emails Found:</h1>
+        <ul class="email-list">
+            {% for email in emails %}
+                <li class="email-item">{{ email }} <button class="copy-btn" onclick="copyToClipboard('{{ email }}')">Copy</button></li>
+            {% endfor %}
+        </ul>
+        <button class="goback-btn" onclick="goBack()">Go Back</button>
+    </body>
+</html>
