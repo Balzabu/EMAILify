@@ -1,12 +1,12 @@
 # EMAILify
 
-EMAILify is a Python-based project designed to extract email addresses from pages quickly. Whether you need to gather contact information for networking, lead generation, or research purposes, Email-ify simplifies the process by providing a user-friendly WebUI and a convenient API.
+EMAILify is a Python-based project designed to extract email addresses from pages quickly. Whether you need to gather contact information for networking, lead generation, or research purposes, EMAILify simplifies the process by providing a user-friendly WebUI and a convenient API.
 
 
 ## Features
 
 - **WebUI**: Accessible through a web browser, the WebUI allows users to input a valid URL and receive a list of extracted email addresses from the corresponding website.
-- **API**: For seamless integration into existing applications or workflows, Email-ify offers an API endpoint that accepts URL parameters, making it easy to automate email extraction processes.
+- **API**: For seamless integration into existing applications or workflows, EMAILify offers an API endpoint that accepts URL parameters, making it easy to automate email extraction processes.
 
 ## Usage
 
@@ -53,9 +53,8 @@ pip install -r requirements.txt
 
 ## Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests to enhance Email-ify.
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-``` ````
